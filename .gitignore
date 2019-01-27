@@ -2,3 +2,8 @@
 
 ### Webstorm/intelli
 .idea/
+
+# node
+
+node_modules/
+dist/
