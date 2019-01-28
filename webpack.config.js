@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const rules = require('./webpack/webpack.rules');
 
@@ -14,6 +15,10 @@ module.exports = {
   },
   devtool: 'source-map',
   resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      theme: path.resolve(__dirname, 'src/theme'),
+    },
     extensions: ['.ts', '.tsx', '.js', '.json'],
   },
   module: {

@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
-import { Hello } from './index';
+import { Hello } from '.';
 
 describe('(component) Hello', () => {
   it('should render without crashing', () => {

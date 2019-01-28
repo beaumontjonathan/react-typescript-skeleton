@@ -6,6 +6,7 @@
     "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case"],
 
     // tslint-react
+    "jsx-boolean-value": false,
     "jsx-no-lambda": false,
     "import-name": false,
     "no-duplicate-imports": false,

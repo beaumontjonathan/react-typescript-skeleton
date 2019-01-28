@@ -1,9 +1,17 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Hello } from './components/Hello';
+import { ThemeProvider, theme } from './theme'
+
+import { Hello } from 'components/Hello';
+import { Button } from 'components/atoms/Button';
 
 ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React"/>,
+  <ThemeProvider theme={theme}>
+    <div>
+      <Hello compiler="TypeScript" framework="React"/>
+      <Button text="hello world" />
+    </div>
+  </ThemeProvider>,
   document.getElementById('root'),
 );
